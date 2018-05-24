@@ -9,7 +9,7 @@ public class MyClientSocket
 {
     private Socket socket;
     private Scanner scanner;
-    private MyClientSocket(InetAddress serverAddress, int serverPort) throws Exception 
+    private MyClientSocket("192.168.230.136", 2400) throws Exception 
     {
         this.socket = new Socket(serverAddress, serverPort);
         this.scanner = new Scanner(System.in);
